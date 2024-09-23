@@ -57,3 +57,5 @@ if __name__ == "__main__":
 
 # Fechar conexão com o banco de dados
 conn.close()
+
+
