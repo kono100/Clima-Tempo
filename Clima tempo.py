@@ -3,7 +3,7 @@ import sqlite3
 import datetime
 
 # Substitua 'YOUR_API_KEY' pela sua chave de API do OpenWeatherMap
-API_KEY = '235241fdcb0a14c27cfa6197ac8a0595'
+API_KEY = 'API_KEY'
 BASE_URL = 'http://api.openweathermap.org/data/2.5/weather'
 
 # Conectar ao banco de dados SQLite (use o mesmo banco usado na consulta)
@@ -40,7 +40,8 @@ def save_weather_data(city, temperature, humidity, description):
 
 # Exemplo de uso
 if __name__ == "__main__":
-    city = 'Batatais'
+    # city = 'Batatais'
+    city = 'Ribeirão Preto'
     data = get_weather_data(city)
     
     if data.get('cod') == 200:
